@@ -1,0 +1,344 @@
+<!DOCTYPE html>Services
+<html lang="en" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+
+    <!-- Document Title -->
+    <title>Services - Social Wave Marketing</title>
+
+    <!-- google fonts linkup -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome linkup -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- animate on scroll library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- CSS file linkup -->
+    <link rel="stylesheet" href="./public/style.css" />
+  </head>
+  <body
+    class="font-display"
+    style="
+      background: url('./img/serviceBG.png'), #010101;
+      background-size: cover;
+      background-repeat: no-repeat;
+    "
+  >
+    <!-- Content Start -->
+    <main class="w-full h-full" id="banner">
+      <div class="md:w-10/12 container w-full mx-auto">
+        <!-- Navbar Start -->
+        <nav
+          class="md:py-4 md:h-32 md:px-0 flex items-center justify-between w-full h-24 px-4 py-2"
+        >
+          <!-- left Side start-->
+          <div class="w-full">
+            <a href="index.html">
+              <img src="./img/logo.png" alt="" class="md:w-[120px] w-[100px]" />
+            </a>
+          </div>
+          <!-- left Side End-->
+
+          <!-- right side start -->
+          <div class="lg:block hidden w-full">
+            <div class="flex items-end justify-end w-full">
+              <ul class="flex items-center gap-12">
+                <li class="text-opacity-70 font-medium text-white">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="text-opacity-70 font-medium text-white">
+                  <a href="About.html">About us</a>
+                </li>
+                <li class="font-medium text-white text-opacity-100">
+                  <a href="#">Services</a>
+                </li>
+                <li class="text-opacity-70 font-medium text-white">
+                  <a href="contact.html">Contact us</a>
+                </li>
+                <li class="font-medium text-white text-opacity-100">
+                  <a href="booking.html">
+                    <button
+                      class="md:w-32 bg-btnPrimary hover:bg-transparent border-btnPrimary md:text-base w-28 py-[10px] text-sm font-medium text-white duration-300 border rounded-lg"
+                    >
+                      Book a call
+                    </button>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- right side end -->
+
+          <!-- hamburger menu -->
+          <div class="lg:hidden block w-full">
+            <div class="flex justify-end w-full">
+              <i
+                class="fa-solid fa-bars-staggered hamburger pr-2 text-3xl text-white cursor-pointer"
+              ></i>
+            </div>
+          </div>
+
+          <!-- Sidebar -->
+          <div class="lg:hidden block">
+            <div
+              class="sidebar duration-700 fixed top-0 left-[100%] flex items-center justify-center w-screen h-screen text-white"
+              style="
+                background: linear-gradient(
+                  150.41deg,
+                  #000000 43.48%,
+                  #3300ff 98.37%
+                );
+              "
+            >
+              <!-- close btn -->
+              <div class="right-7 top-8 absolute">
+                <i
+                  class="fa-solid fa-x close_sidebar text-2xl cursor-pointer"
+                ></i>
+              </div>
+              <!-- sidebar content start-->
+              <div class="w-full">
+                <!-- logo -->
+                <div class="flex justify-center">
+                  <img src="./img/logo.png" alt="" />
+                </div>
+
+                <!-- Navlinks -->
+                <div class="mt-12">
+                  <ul class="flex flex-col items-center gap-12">
+                    <li class="text-opacity-70 font-medium text-white">
+                      <a href="index.html">Home</a>
+                    </li>
+                    <li class="text-opacity-70 font-medium text-white">
+                      <a href="about.html">About us</a>
+                    </li>
+                    <li class="font-medium text-white text-opacity-100">
+                      <a href="#">Services</a>
+                    </li>
+                    <li class="text-opacity-70 font-medium text-white">
+                      <a href="contact.html">Contact us</a>
+                    </li>
+                    <li class="font-medium text-white text-opacity-100">
+                      <a href="booking.html">
+                        <button
+                          class="md:w-40 bg-btnPrimary hover:bg-transparent border-btnPrimary md:text-base w-28 py-3 text-sm font-medium text-white duration-300 border rounded-l"
+                        >
+                          Book a call
+                        </button>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- sidebar content end-->
+            </div>
+          </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Our Services start -->
+        <div
+          class="w-full md:w-8/12 md:px-0 px-4 mx-auto pt-[10vh] md:pt-[15vh] text-center"
+        >
+          <h1 class="text-2xl font-semibold text-white">Our Services</h1>
+          <p class="pt-8 text-lg text-white text-[17px]">
+            Our services include creating and managing social media campaigns,
+            social media advertising, content creation, and analysis and
+            reporting. We are dedicated to providing our clients with the
+            highest level of service and support to ensure their social media
+            campaigns are a success.
+          </p>
+        </div>
+        <!-- Our Services end -->
+
+        <!-- Services Start -->
+        <div class="md:w-8/12 w-full mx-auto">
+          <!-- Card One start -->
+          <div
+            class="flex md:flex-row flex-col-reverse items-center justify-between w-full md:py-[7vh] py-[5vh]"
+          >
+            <!-- content -->
+            <div
+              class="md:text-start flex flex-col items-center justify-center w-full text-center"
+            >
+              <div>
+                <h1 class="md:text-2xl text-xl font-semibold text-white">
+                  Social Media Campaigns
+                </h1>
+                <button
+                  class="w-28 md:w-36 bg-btnPrimary hover:bg-transparent border-btnPrimary md:text-base py-[10px] mt-3 text-sm font-medium text-white duration-300 border rounded-lg"
+                >
+                  <a href="booking.html"> Hire Now </a>
+                </button>
+              </div>
+            </div>
+            <!-- image -->
+            <div class="w-full" data-aos="fade-left" data-aos-duration="700">
+              <img
+                src="./img/socialmedia.png"
+                alt=""
+                class="md:scale-150 lg:scale-100"
+              />
+            </div>
+          </div>
+          <!-- Card One end-->
+
+          <!-- Card two start -->
+          <div
+            class="flex items-center flex-col md:flex-row justify-between w-full pb-[5vh] md:pb-[7vh]"
+          >
+            <!-- image -->
+            <div
+              class="flex justify-center w-full"
+              data-aos="fade-right"
+              data-aos-duration="700"
+            >
+              <img src="./img/socialmediads.png" alt="" />
+            </div>
+            <!-- content -->
+            <div
+              class="md:text-start flex flex-col items-center justify-center w-full pt-12 text-center"
+            >
+              <div>
+                <h1 class="md:text-2xl text-xl font-semibold text-white">
+                  Social Media Advertisement
+                </h1>
+                <button
+                  class="w-28 md:w-36 bg-btnPrimary hover:bg-transparent border-btnPrimary md:text-base py-[10px] mt-3 text-sm font-medium text-white duration-300 border rounded-lg"
+                >
+                  <a href="booking.html"> Hire Now </a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card two end-->
+
+          <!-- Card three start -->
+          <div
+            class="flex items-center md:flex-row flex-col-reverse justify-between w-full pb-[7vh]"
+          >
+            <!-- content -->
+            <div
+              class="md:text-start flex flex-col items-center justify-center w-full text-center"
+            >
+              <div>
+                <h1 class="md:text-2xl text-xl font-semibold text-white">
+                  Analysis and Reports
+                </h1>
+                <button
+                  class="w-28 md:w-36 bg-btnPrimary hover:bg-transparent border-btnPrimary md:text-base py-[10px] mt-3 text-sm font-medium text-white duration-300 border rounded-lg"
+                >
+                  <a href="booking.html"> Hire Now </a>
+                </button>
+              </div>
+            </div>
+
+            <!-- image -->
+            <div
+              class="flex justify-center w-full"
+              data-aos="fade-left"
+              data-aos-duration="700"
+            >
+              <img src="./img/analysisreport.png" alt="" />
+            </div>
+          </div>
+          <!-- Card three end-->
+        </div>
+        <!-- Services End -->
+
+        <!-- footer start -->
+        <div
+          class="relative w-full pt-4 md:pt-14 md:pb-14 pb-8 z-[100] flex md:flex-row gap-y-4 flex-col justify-between items-start"
+        >
+          <!-- logo -->
+          <div class="md:justify-start flex justify-center w-full">
+            <img
+              src="./img/logo.png"
+              alt=""
+              width="120"
+              class="md:mt-[-25px]"
+            />
+          </div>
+
+          <!-- page links -->
+          <div class="md:text-start flex justify-center w-full text-center">
+            <ul>
+              <li class="md:mb-6 md:text-base mb-3 text-sm text-white">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="md:mb-6 md:text-base mb-3 text-sm text-white">
+                <a href="about.html">About us</a>
+              </li>
+              <li class="md:mb-6 md:text-base mb-3 text-sm text-white">
+                <a href="#banner">Services</a>
+              </li>
+              <li class="md:text-base text-sm text-white">
+                <a href="service.html">Contact us</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- social link -->
+          <div
+            class="md:mt-0 md:justify-end md:text-start flex justify-center w-full mt-4 text-center"
+          >
+            <ul>
+              <!-- follow us -->
+              <div>
+                <p class="md:text-base mb-4 text-sm text-white">Follow Us</p>
+
+                <!-- social links -->
+                <div class="flex gap-6">
+                  <a href="#">
+                    <img src="./img/facebook.png" alt="" width="20" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/twitter.png" alt="" width="20" />
+                  </a>
+                  <a
+                    href="https://instagram.com/socialwavefr?igshid=YmMyMTA2M2Y="
+                    target="_blank"
+                  >
+                    <img src="./img/instagram.png" alt="" width="20" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/linkedin.png" alt="" width="20" />
+                  </a>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <!-- footer end -->
+      </div>
+    </main>
+
+    <!-- Content End -->
+    <!-- js file linkup -->
+    <script src="./js/main.js"></script>
+
+    <!-- animate on scroll library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

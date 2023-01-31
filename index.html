@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+
+    <!-- Document Title -->
+    <title>Home - Social Wave Marketing</title>
+
+    <!-- google fonts linkup -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome linkup -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- animate on scroll library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- CSS file linkup -->
+    <link rel="stylesheet" href="./public/style.css" />
+  </head>
+  <body class="font-display">
+    <!-- Content Start -->
+    <main class="bg-homePage w-full h-full">
+      <!-- Banner Area Start -->
+      <div class="relative w-full h-screen" id="banner">
+        <!-- Background Overlay -->
+        <div class="absolute right-0 overflow-hidden h-full z-[10]">
+          <img src="./img/homeBG.png" alt="" class="lg:h-auto h-full" />
+        </div>
+
+        <!-- Content Container Start-->
+        <div class="container md:w-10/12 w-full mx-auto z-[100] relative">
+          <!-- Navbar Start -->
+          <nav
+            class="md:py-4 md:h-32 md:px-0 flex items-center justify-between w-full h-24 px-4 py-2"
+          >
+            <!-- left Side start-->
+            <div class="w-full">
+              <a href="#">
+                <img
+                  src="./img/logo.png"
+                  alt=""
+                  class="md:w-[120px] w-[100px]"
+                />
+              </a>
+            </div>
+            <!-- left Side End-->
+
+            <!-- right side start -->
+            <div class="lg:block hidden w-full">
+              <div class="flex items-end justify-end w-full">
+                <ul class="flex items-center gap-12">
+                  <li class="font-medium text-white text-opacity-100">
+                    <a href="#">Home</a>
+                  </li>
+                  <li class="text-opacity-70 font-medium text-white">
+                    <a href="about.html">About us</a>
+                  </li>
+                  <li class="text-opacity-70 font-medium text-white">
+                    <a href="service.html">Services</a>
+                  </li>
+                  <li class="text-opacity-70 font-medium text-white">
+                    <a href="contact.html">Contact us</a>
+                  </li>
+                  <li class="font-medium text-white text-opacity-100">
+                    <a href="booking.html">
+                      <button
+                        class="md:w-32 bg-btnPrimary hover:bg-transparent border-btnPrimary md:text-base w-28 py-[10px] text-sm font-medium text-white duration-300 border rounded-lg"
+                      >
+                        Book a call
+                      </button>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- right side end -->
+
+            <!-- hamburger menu -->
+            <div class="lg:hidden block w-full">
+              <div class="flex justify-end w-full">
+                <i
+                  class="fa-solid fa-bars-staggered hamburger pr-2 text-3xl text-white cursor-pointer"
+                ></i>
+              </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="lg:hidden block">
+              <div
+                class="sidebar duration-700 fixed top-0 left-[100%] flex items-center justify-center w-screen h-screen text-white"
+                style="
+                  background: linear-gradient(
+                    150.41deg,
+                    #000000 43.48%,
+                    #3300ff 98.37%
+                  );
+                "
+              >
+                <!-- close btn -->
+                <div class="right-7 top-8 absolute">
+                  <i
+                    class="fa-solid fa-x close_sidebar text-2xl cursor-pointer"
+                  ></i>
+                </div>
+                <!-- sidebar content start-->
+                <div class="w-full">
+                  <!-- logo -->
+                  <div class="flex justify-center">
+                    <img src="./img/logo.png" alt="" />
+                  </div>
+
+                  <!-- Navlinks -->
+                  <div class="mt-12">
+                    <ul class="flex flex-col items-center gap-12">
+                      <li class="font-medium text-white text-opacity-100">
+                        <a href="#">Home</a>
+                      </li>
+                      <li class="text-opacity-70 font-medium text-white">
+                        <a href="about.html">About us</a>
+                      </li>
+                      <li class="text-opacity-70 font-medium text-white">
+                        <a href="service.html">Services</a>
+                      </li>
+                      <li class="text-opacity-70 font-medium text-white">
+                        <a href="contact.html">Contact us</a>
+                      </li>
+                      <li class="font-medium text-white text-opacity-100">
+                        <a href="booking.html">
+                          <button
+                            class="md:w-40 bg-btnPrimary hover:bg-transparent border-btnPrimary md:text-base w-28 py-3 text-sm font-medium text-white duration-300 border rounded-l"
+                          >
+                            Book a call
+                          </button>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- sidebar content end-->
+              </div>
+            </div>
+          </nav>
+          <!-- Navbar End -->
+
+          <!-- Banner Content Start -->
+          <div class="homepage_content_div flex items-center h-full px-6">
+            <!-- content start -->
+            <div>
+              <h1 class="text-[25px] md:text-[40px] font-semibold text-white">
+                Grow Your Business
+              </h1>
+              <div class="lg:w-5/12 w-full mt-4 mb-6">
+                <p
+                  class="text-opacity-90 md:text-base text-sm leading-6 text-white"
+                >
+                  Welcome to our SocialWave Marketing Agency. We are a team of
+                  highly skilled and experienced professionals who specialize in
+                  providing comprehensive social media marketing solutions to
+                  businesses of all sizes. Our focus is on helping our clients
+                  achieve their goals and objectives through effective and
+                  efficient use of social media platforms such as Instagram,
+                  Facebook and Google Ads.
+                </p>
+              </div>
+              <!-- buttons -->
+              <div class="md:gap-8 flex items-center gap-4">
+                <a href="booking.html">
+                  <button
+                    class="w-28 md:w-36 bg-btnPrimary hover:bg-transparent border-btnPrimary md:text-base py-3 text-sm font-medium text-white duration-300 border rounded-lg"
+                  >
+                    Hire Now
+                  </button>
+                </a>
+
+                <a href="about.html">
+                  <button
+                    class="w-28 md:w-36 border-btnPrimary hover:bg-btnPrimary md:text-base py-3 text-sm font-medium text-white duration-300 bg-transparent border rounded-lg"
+                  >
+                    Learn More
+                  </button>
+                </a>
+              </div>
+            </div>
+            <!-- content end -->
+          </div>
+          <!-- Banner Content End -->
+        </div>
+        <!-- Content Container End-->
+      </div>
+      <!-- Banner Area End -->
+
+      <!-- Banner Bottom Area Start -->
+      <div
+        class="bg-bannerBottom relative w-full h-full min-h-screen py-10 overflow-hidden"
+      >
+        <div class="md:w-10/12 md:px-0 container w-full px-4 mx-auto">
+          <!-- what we do start -->
+          <div class="lg:py-12 py-6">
+            <!-- heading -->
+            <h2
+              class="lg:text-5xl md:text-4xl text-3xl font-bold text-center text-white"
+            >
+              What we do
+            </h2>
+
+            <!-- content start -->
+            <div
+              class="lg:flex-row lg:my-20 flex flex-col justify-between w-full my-4"
+            >
+              <!-- image -->
+              <div
+                class="lg:justify-start flex justify-center w-full"
+                data-aos="fade-right"
+                data-aos-duration="700"
+              >
+                <img src="./img/wwd.png" alt="" />
+              </div>
+
+              <!-- content 1-->
+              <div class="md:ml-5 lg:mt-0 md:mt-8 w-full mt-4 ml-0">
+                <h3 class="md:text-3xl text-xl font-bold text-white">
+                  How We Operate
+                </h3>
+
+                <ul class="lg:mt-14 md:mt-8 w-full mt-4">
+                  <li class="flex items-start gap-4 mb-4 text-lg text-white">
+                    <img
+                      src="./img/blueTick.png"
+                      alt=""
+                      class="w-[15px] md:w-[20px] mt-1"
+                    />
+                    <span class="text-sm md:text-[15px]"
+                      >We analyse the history of your brand.</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-4 mb-4 text-lg text-white">
+                    <img
+                      src="./img/blueTick.png"
+                      alt=""
+                      class="w-[15px] md:w-[20px] mt-1"
+                    />
+                    <span class="text-sm md:text-[15px]"
+                      >We craft a strategy that is in harmony <br />
+                      with your brand vision</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-4 mb-4 text-lg text-white">
+                    <img
+                      src="./img/blueTick.png"
+                      alt=""
+                      class="w-[15px] md:w-[20px] mt-1"
+                    />
+                    <span class="text-sm md:text-[15px]"
+                      >We create & run campaigns that sell your <br />
+                      product efficiently.</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-4 mb-4 text-lg text-white">
+                    <img
+                      src="./img/blueTick.png"
+                      alt=""
+                      class="w-[15px] md:w-[20px] mt-1"
+                    />
+                    <span class="text-sm md:text-[15px]"
+                      >We collect & utilize data to continuously <br />
+                      optimise & scale your campaigns.</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-4 mb-4 text-lg text-white">
+                    <img
+                      src="./img/blueTick.png"
+                      alt=""
+                      class="w-[15px] md:w-[20px] mt-1"
+                    />
+                    <span class="text-sm md:text-[15px]"
+                      >We always strive to achieve a ROI of 4+ <br />
+                      for our clients</span
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- content 2-->
+              <div class="lg:mt-0 w-full mt-6">
+                <h3
+                  class="md:text-3xl md:text-start text-xl font-bold text-center text-white"
+                >
+                  How We Don't Operate
+                </h3>
+
+                <ul class="lg:mt-14 mt-4">
+                  <li class="flex items-start gap-4 mb-4 text-lg text-white">
+                    <img
+                      src="./img/close.png"
+                      alt=""
+                      class="w-[15px] md:w-[20px] mt-1"
+                    />
+                    <span class="text-sm md:text-[15px]"
+                      >We do not create the content for campaigns</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-4 mb-4 text-lg text-white">
+                    <img
+                      src="./img/close.png"
+                      alt=""
+                      class="w-[15px] md:w-[20px] mt-1"
+                    />
+                    <span class="text-sm md:text-[15px]"
+                      >We do not offer google ads, email marketing or SEO <br />
+                      Optimization</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-4 mb-4 text-lg text-white">
+                    <img
+                      src="./img/close.png"
+                      alt=""
+                      class="w-[15px] md:w-[20px] mt-1"
+                    />
+                    <span class="text-sm md:text-[15px]"
+                      >We do not charge money to onboard you</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-4 mb-4 text-lg text-white">
+                    <img
+                      src="./img/close.png"
+                      alt=""
+                      class="w-[15px] md:w-[20px] mt-1"
+                    />
+                    <span class="text-sm md:text-[15px]"
+                      >We do not offer free trials</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- content end -->
+          </div>
+          <!-- what we do end -->
+
+          <!-- monthy stats start -->
+          <div
+            class="md:my-20 md:flex-row md:gap-20 gap-y-12 flex flex-col items-center justify-center w-full my-4"
+          >
+            <div class="text-center">
+              <p
+                class="font-extralight text-5xl lg:text-[80px] leading-[48px] lg:leading-[80px] text-white"
+              >
+                4
+              </p>
+              <p class="text-sm text-white">Active Clients</p>
+            </div>
+            <div class="text-center">
+              <p
+                class="font-extralight text-5xl lg:text-[80px] leading-[48px] lg:leading-[80px] text-white"
+              >
+                +100 000 €
+              </p>
+              <p class="text-sm text-white">Monthly Adspend</p>
+            </div>
+            <div class="text-center">
+              <p
+                class="font-extralight text-5xl lg:text-[80px] leading-[48px] lg:leading-[80px] text-white"
+              >
+                4.2 x
+              </p>
+              <p class="text-sm text-white">Average ROI</p>
+            </div>
+          </div>
+          <!-- monthy stats end -->
+
+          <!-- benifit working start -->
+          <div
+            class="md:py-32 md:flex-row py-14 flex flex-col items-center justify-between w-full"
+          >
+            <!-- left side -->
+            <div
+              class="flex justify-center w-full"
+              data-aos="fade-right"
+              data-aos-duration="700"
+            >
+              <img src="./img/benifitworking.png" alt="" />
+            </div>
+
+            <!-- right side -->
+            <div class="md:mt-0 w-full mt-8">
+              <h4
+                class="lg:text-2xl lg:mb-8 lg:text-start mb-4 text-lg font-semibold text-center text-white"
+              >
+                Benefits of Working with us
+              </h4>
+              <p
+                class="lg:text-base text-opacity-80 lg:text-start text-sm text-center text-white"
+              >
+                At our agency, we understand the importance of building trust
+                and maintaining the safety of our clients. That's why we
+                prioritise transparency and communication throughout the entire
+                process, making sure our clients are well informed about the
+                strategies we are implementing for their business.
+              </p>
+              <p
+                class="lg:text-base text-opacity-80 lg:text-start pt-4 text-sm text-center text-white"
+              >
+                Our team of experts possess a deep understanding of the social
+                media landscape and are able to create custom campaigns that are
+                tailored to the specific needs and goals of our clients. We are
+                passionate about providing our clients with the best possible
+                results and strive to exceed expectations every time.
+              </p>
+            </div>
+          </div>
+          <!-- benifit working end -->
+
+          <!-- footer start -->
+          <div
+            class="relative w-full pt-4 md:pt-10 md:pb-4 pb-0 z-[100] flex md:flex-row gap-y-4 flex-col justify-between items-start"
+          >
+            <!-- logo -->
+            <div class="md:justify-start flex justify-center w-full">
+              <img src="./img/logo.png" alt="" width="120" />
+            </div>
+
+            <!-- page links -->
+            <div class="md:text-start flex justify-center w-full text-center">
+              <ul>
+                <li class="md:mb-6 md:text-base mb-3 text-sm text-white">
+                  <a href="#banner">Home</a>
+                </li>
+                <li class="md:mb-6 md:text-base mb-3 text-sm text-white">
+                  <a href="about.html">About us</a>
+                </li>
+                <li class="md:mb-6 md:text-base mb-3 text-sm text-white">
+                  <a href="service.html">Services</a>
+                </li>
+                <li class="md:text-base text-sm text-white">
+                  <a href="service.html">Contact us</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- social link -->
+            <div
+              class="md:mt-0 md:justify-end md:text-start flex justify-center w-full mt-4 text-center"
+            >
+              <ul>
+                <!-- follow us -->
+                <div>
+                  <p class="md:text-base mb-4 text-sm text-white">Follow Us</p>
+
+                  <!-- social links -->
+                  <div class="flex gap-6">
+                    <a href="#">
+                      <img src="./img/facebook.png" alt="" width="20" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/twitter.png" alt="" width="20" />
+                    </a>
+                    <a
+                      href="https://instagram.com/socialwavefr?igshid=YmMyMTA2M2Y="
+                      target="_blank"
+                    >
+                      <img src="./img/instagram.png" alt="" width="20" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/linkedin.png" alt="" width="20" />
+                    </a>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+          <!-- footer end -->
+
+          <!-- absoulte div -->
+          <!-- overlay -->
+          <div class="absolute bottom-0 md:bottom-[-5%] left-0 z-[10]">
+            <img src="./img/footeroverlay.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- Banner Bottom Area End -->
+    </main>
+
+    <!-- Content End -->
+
+    <!-- js file linkup -->
+    <script src="./js/main.js"></script>
+
+    <!-- animate on scroll library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

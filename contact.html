@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+
+    <!-- Document Title -->
+    <title>Contact Us - Social Wave Marketing</title>
+
+    <!-- google fonts linkup -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome linkup -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- sweet alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- animate on scroll library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- CSS file linkup -->
+    <link rel="stylesheet" href="./public/style.css" />
+  </head>
+  <body class="font-display bg-bannerBottom">
+    <!-- Content Start -->
+    <main class="w-full h-full" id="banner">
+      <div class="md:w-10/12 container w-full mx-auto">
+        <!-- Navbar Start -->
+        <nav
+          class="md:py-4 md:h-32 md:px-0 flex items-center justify-between w-full h-24 px-4 py-2"
+        >
+          <!-- left Side start-->
+          <div class="w-full">
+            <a href="index.html">
+              <img src="./img/logo.png" alt="" class="md:w-[120px] w-[100px]" />
+            </a>
+          </div>
+          <!-- left Side End-->
+
+          <!-- right side start -->
+          <div class="lg:block hidden w-full">
+            <div class="flex items-end justify-end w-full">
+              <ul class="flex items-center gap-12">
+                <li class="text-opacity-70 font-medium text-white">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="text-opacity-70 font-medium text-white">
+                  <a href="About.html">About us</a>
+                </li>
+                <li class="text-opacity-70 font-medium text-white">
+                  <a href="service.html">Services</a>
+                </li>
+                <li class="font-medium text-white text-opacity-100">
+                  <a href="#">Contact us</a>
+                </li>
+                <li class="font-medium text-white text-opacity-100">
+                  <a href="booking.html">
+                    <button
+                      class="md:w-32 bg-btnPrimary hover:bg-transparent border-btnPrimary md:text-base w-28 py-[10px] text-sm font-medium text-white duration-300 border rounded-lg"
+                    >
+                      Book a call
+                    </button>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- right side end -->
+
+          <!-- hamburger menu -->
+          <div class="lg:hidden block w-full">
+            <div class="flex justify-end w-full">
+              <i
+                class="fa-solid fa-bars-staggered hamburger pr-2 text-3xl text-white cursor-pointer"
+              ></i>
+            </div>
+          </div>
+
+          <!-- Sidebar -->
+          <div class="lg:hidden block">
+            <div
+              class="sidebar duration-700 fixed top-0 left-[100%] flex items-center justify-center w-screen h-screen text-white"
+              style="
+                background: linear-gradient(
+                  150.41deg,
+                  #000000 43.48%,
+                  #3300ff 98.37%
+                );
+              "
+            >
+              <!-- close btn -->
+              <div class="right-4 top-4 absolute">
+                <i
+                  class="fa-solid fa-x close_sidebar text-2xl cursor-pointer"
+                ></i>
+              </div>
+              <!-- sidebar content start-->
+              <div class="w-full">
+                <!-- logo -->
+                <div class="flex justify-center">
+                  <a href="index.html">
+                    <img src="./img/logo.png" alt="" />
+                  </a>
+                </div>
+
+                <!-- Navlinks -->
+                <div class="mt-12">
+                  <ul class="flex flex-col items-center gap-12">
+                    <li class="text-opacity-70 font-medium text-white">
+                      <a href="index.html">Home</a>
+                    </li>
+                    <li class="text-opacity-70 font-medium text-white">
+                      <a href="about.html">About us</a>
+                    </li>
+                    <li class="text-opacity-70 font-medium text-white">
+                      <a href="service.html">Services</a>
+                    </li>
+                    <li class="font-medium text-white text-opacity-100">
+                      <a href="#">Contact us</a>
+                    </li>
+                    <li class="font-medium text-white text-opacity-100">
+                      <a href="booking.html">
+                        <button
+                          class="md:w-40 bg-btnPrimary hover:bg-transparent border-btnPrimary md:text-base w-28 py-3 text-sm font-medium text-white duration-300 border rounded-l"
+                        >
+                          Book a call
+                        </button>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- sidebar content end-->
+            </div>
+          </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Our Services start -->
+        <div
+          class="w-full md:px-0 px-6 mx-auto pt-[5vh] md:pt-[10vh] flex md:flex-row flex-col-reverse justify-between items-center gap-y-5"
+        >
+          <!-- content -->
+          <div class="md:w-6/12 md:text-start w-full text-center">
+            <h1 class="md:text-4xl lg:text-6xl font-semibold text-white">
+              Contact Us
+            </h1>
+            <p
+              class="text-opacity-70 md:pt-8 pt-4 lg:text-[22px] text-sm md:text-lg text-white"
+            >
+              Our team of experts possess a deep understanding of the social
+              media landscape and are able to create custom campaigns that are
+              tailored to the specific needs and goals of our clients. We are
+              passionate about providing our clients with the best possible
+              results and strive to exceed expectations every time.
+            </p>
+          </div>
+
+          <!-- image -->
+          <div
+            class="md:w-6/12 md:justify-end flex justify-center w-full"
+            data-aos="fade-left"
+            data-aos-duration="700"
+          >
+            <img
+              src="./img/logoBig.png"
+              alt=""
+              class="lg:w-[400px] md:w-[250px] w-[200px]"
+            />
+          </div>
+        </div>
+        <!-- Our Services end -->
+
+        <!-- contct form start -->
+        <div
+          class="flex justify-between md:flex-row flex-col w-full md:h-[400px] lg:h-[500px] md:mt-40 md:mb-20 my-20 lg:mt-[20vh] lg:mb-[30vh] px-4"
+        >
+          <!-- left div -->
+          <div
+            class="lg:w-4/12 md:w-5/12 md:py-0 w-full py-8 rounded-tl-lg rounded-bl-lg"
+            style="
+              background: linear-gradient(
+                150.41deg,
+                #000000 43.48%,
+                #3300ff 98.37%
+              );
+            "
+          >
+            <!-- content start -->
+            <div class="lg:px-20 w-full px-4">
+              <h2
+                class="lg:text-[22px] text-base font-semibold text-white pt-20"
+              >
+                Schedule a call with us
+              </h2>
+
+              <!-- phone -->
+              <div class="lg:gap-4 flex items-center gap-2 pt-10">
+                <img
+                  src="./img/phoneIcon.png"
+                  alt="phone_icon"
+                  class="lg:w-[35px] w-[20px]"
+                />
+                <p class="lg:text-base text-sm text-white">
+                  Call Us: (416) 004-00009
+                </p>
+              </div>
+
+              <!-- mail -->
+              <div class="lg:gap-4 flex items-center gap-2 pt-10">
+                <img
+                  src="./img/mailicon.png"
+                  alt="phone_icon"
+                  class="lg:w-[30px] w-[20px]"
+                />
+                <p class="lg:text-base text-sm text-white">
+                  socialwave@abc.com
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- right div -->
+          <div class="md:w-8/12 w-full bg-white rounded-tr-lg rounded-br-lg">
+            <form onsubmit="submitHandler()" class="lg:px-[10%] px-5 py-[5%]">
+              <!-- name and email -->
+              <div
+                class="lg:gap-0 md:flex-row gap-y-10 flex flex-col justify-between w-full gap-2"
+              >
+                <!-- name -->
+                <div class="lg:w-5/12 md:w-6/12 flex flex-col w-full">
+                  <label for="name" class="text-labelColor mb-4 text-sm"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter Your Name"
+                    class="border-b-borderColor placeholder:text-black placeholder:text-opacity-70 lg:text-base pb-2 text-sm bg-transparent border-b outline-none"
+                  />
+                </div>
+                <!-- email -->
+                <div class="lg:w-5/12 md:w-6/12 flex flex-col w-full">
+                  <label for="email" class="text-labelColor mb-4 text-sm"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter Your Email"
+                    class="border-b-borderColor placeholder:text-black placeholder:text-opacity-70 lg:text-base pb-2 text-sm bg-transparent border-b outline-none"
+                  />
+                </div>
+              </div>
+
+              <!-- Date -->
+              <div class="w-full mt-10">
+                <!-- date -->
+                <div class="lg:w-5/12 md:w-6/12 flex flex-col w-full">
+                  <label for="datepicker" class="text-labelColor mb-4 text-sm"
+                    >Date</label
+                  >
+                  <div class="border-b-borderColor flex items-start border-b">
+                    <img
+                      src="./img/clock.png"
+                      alt=""
+                      width="20"
+                      class="mt-[3px]"
+                    />
+                    <input
+                      type="date"
+                      id="datepicker"
+                      class="placeholder:text-black placeholder:text-opacity-70 lg:text-base w-full pb-2 text-sm bg-transparent outline-none"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- button -->
+              <div class="mt-10">
+                <button
+                  type="submit"
+                  class="w-28 md:w-40 bg-btnPrimary hover:bg-transparent border-btnPrimary md:text-base hover:text-btnPrimary py-3 text-sm font-medium text-white duration-300 border rounded-lg"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- contct form end -->
+
+        <!-- footer start -->
+        <div
+          class="relative w-full pt-4 md:pt-14 md:pb-14 pb-8 z-[100] flex md:flex-row gap-y-4 flex-col justify-between items-start"
+        >
+          <!-- logo -->
+          <div class="md:justify-start flex justify-center w-full">
+            <img
+              src="./img/logo.png"
+              alt=""
+              width="120"
+              class="md:mt-[-25px]"
+            />
+          </div>
+
+          <!-- page links -->
+          <div class="md:text-start flex justify-center w-full text-center">
+            <ul>
+              <li class="md:mb-6 md:text-base mb-3 text-sm text-white">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="md:mb-6 md:text-base mb-3 text-sm text-white">
+                <a href="about.html">About us</a>
+              </li>
+              <li class="md:mb-6 md:text-base mb-3 text-sm text-white">
+                <a href="service.html">Services</a>
+              </li>
+              <li class="md:text-base text-sm text-white">
+                <a href="#banner">Contact us</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- social link -->
+          <div
+            class="md:mt-0 md:justify-end md:text-start flex justify-center w-full mt-4 text-center"
+          >
+            <ul>
+              <!-- follow us -->
+              <div>
+                <p class="md:text-base mb-4 text-sm text-white">Follow Us</p>
+
+                <!-- social links -->
+                <div class="flex gap-6">
+                  <a href="#">
+                    <img src="./img/facebook.png" alt="" width="20" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/twitter.png" alt="" width="20" />
+                  </a>
+                  <a
+                    href="https://instagram.com/socialwavefr?igshid=YmMyMTA2M2Y="
+                    target="_blank"
+                  >
+                    <img src="./img/instagram.png" alt="" width="20" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/linkedin.png" alt="" width="20" />
+                  </a>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <!-- footer end -->
+      </div>
+    </main>
+
+    <!-- Content End -->
+
+    <!-- js file linkup -->
+    <script src="./js/main.js"></script>
+
+    <!-- animate on scroll library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
